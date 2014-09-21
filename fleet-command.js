@@ -21,7 +21,7 @@ Router.map(function() {
 //app related stuff
 Settings = new Meteor.Collection('settings');
 //make sure that we have at least the default settings in
-if(Meteor.startup)
+if(Meteor.isServer)
 {
     Meteor.startup(function () {
     if (Settings.find().count() === 0)

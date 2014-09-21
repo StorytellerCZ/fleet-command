@@ -1,0 +1,26 @@
+<template name="fleet-command">
+    <head>
+        <title>Fleet Command</title>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="contain-to-grid sticky">
+            <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+                <ul class="title-area">
+                    <li class="name">
+                        <h1><a href={{pathFor 'home'}}>Fleet Command</a></h1>
+                    </li>
+                </ul>
+                {{> loginButtons}}
+            </nav>
+        </div>
+        
+        <main class="row">
+            {{> yield}}
+        </main>
+        
+        <footer class="row">
+            <p>Created at SFD 2014 at RIT</p>
+        </footer>
+    </body>
+</template>

@@ -1,3 +1,46 @@
 <template name="admin">
-    <h1>Welcome admin!</h1>
+    <h2>Welcome admin!</h2>
+    
+    <!-- app settings -->
+    <div class="small-4 columns">
+        <div class="panel">
+            App settings
+            <a href="#" data-reveal-id="appSettings">Edit settings</a>
+            <ul>
+                <li>Map image name: {{map_image}}</li>
+                <li>Map name: {{map_name}}</li>
+                <li>Map width: {{map_width}}</li>
+                <li>Map height: {{map_height}}</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- notices -->
+    <div class="small-4 columns">
+        <div class="panel">
+            
+        </div>
+    </div>
+    
+    <!-- organizations -->
+    <div class="small-4 columns">
+        <div class="panel">
+            Organizations
+            <ul>
+                {{#each organizations}}
+                    <li><a href="#" data-reveal-id="{{_id}}">{{name}}</a> - <input type="button" id="remove-organization" value="Delete" /></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    
+    {{> adminOrganizationsModal}}
+    
+    <div id="appSettings" class="reveal-modal" data-reveal>
+        <h2>Edit application settings</h2>
+        <form>
+            
+        </form>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
 </template>

@@ -1,3 +1,19 @@
 <template name="office">
-    <h1>Welcome Commander! We are awaiting your orders.</h1>
+    <h2>Welcome Commander! We are awaiting your orders.</h2>
+    
+    <!-- the map -->
+    <div class="small-9 columns">
+        <div class="panel">
+                <svg version="1.1" id="space-map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 {{map_width}} {{map_height}}" width="100%" height="100%">
+                    <image xlink:href="{{map_image}}" x="0" y="0" width="100%" height="100%" id="map-background" externalResourcesRequired="true" />
+                </svg>
+        </div>
+    </div>
+    
+    <!-- commanders menu -->
+    <div class="small-3 columns">
+        <div class="panel">
+            
+        </div>
+    </div>
 </template>

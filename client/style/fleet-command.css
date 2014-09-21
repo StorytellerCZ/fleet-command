@@ -1,1 +1,12 @@
 /* CSS declarations go here */
+body{
+	background-color:#000;
+	background-image: url('images/milkywaybg.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	color: #fff
+}
+h1{
+	color: #fff
+}
+

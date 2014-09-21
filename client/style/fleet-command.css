@@ -3,10 +3,9 @@ body{
 	background-color:#000;
 	background-image: url('images/milkywaybg.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;	
-	color: #fff
+	background-size: 100%;
 }
-h1{
+h1, h2, footer{
 	color: #fff
 }
 
